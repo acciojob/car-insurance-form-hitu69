@@ -1,55 +1,48 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<!-- the entire body must be written by student -->
+<form method="post" >
+<lable for="name">Name</lable>
+<input type="text" id="name" required >
+<br>
+<!-- email -->
+<label for="email">Email</label>
+<input type="email" id="email" required>
+<br>
+<!-- gender -->
+<lable for="gender">Gender</lable>
+<input type="radio" id ="gender" name="gender" required>Male
+<input type="radio" id="gender" name="gender" required>female
+<br>
+<!-- car brands -->
+<label for="cars">Car Brands</label>
+<select id="cars">
+<option>BMW</option>
+<option>Audi</option>
+<option>Mercedez</option>
+</select>
+<br>
+<!-- car age -->
+<label for="carage">Car Age</label>
+<input type="number" id="carage" required>
+<br>
+<!-- date of purchase -->
+<label for="dop">Date of Purchase</label>
+<input type="date" id="dop" required>
+<br>
+<!-- password -->
+<label for="password">Password</label>
+<input type="password" id="password" required>
+<br>
+<button type="submit">Submit </button>
+</form>
+<script type="text/javascript" src="./script.js">
 </script>
-	<section>
-	<form action="/submit-form.php" method="POST">
-	 <label for="name">Name*</label>
-	 <input type="text" name="name" id="name" required><br>
-	
-	 <label for="email">Email*</label>
-	<input type="email" name="email" id="email" required><br>
-
-	<label for="gender">Gender*</label><br>
-	<label for="gender">Male</label>
-	<input type="radio" name="gender" id="gender-m" required>
-	<label for="gender">Female</label>
-	<input type="radio" name="gender" id="gender-f" required><br>
-	
-
-	<label for="cars">Car Brands</label>
-	<select id="cars">
-		<option disabled select>options:</option>
-		<option value="BMW">BMW</option>
-		<option value="Audi">Audi</option>
-		<option value="Mercedez">Mercedez</option>
-	</select><br>
-	
-	<label for="carage">Car Age*</label>
-	<input type="text" name="carage" id="carage" required><br>
-
-	<label for="dop">Date of Purchase(dop)*</label>
-	<input type="date" name="dop" id="dop" required><br>
-	
-	<label for="password">Password*</label>
-	<input type="password" name="password" id="password" required><br>
-
-    
-<!-- 		<input type="button" id="sumbit" value="submit">-->
-	<button type="button" value="sumbit" id="submit">submit</button>
-		
-	</form>
-		
-	</section>
-	
 
 </body>
 
